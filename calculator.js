@@ -15,6 +15,7 @@
    decemelcal.addEventListener('click', ()=>{calcu.value += '.'})
    multical.addEventListener('click', ()=>{calcu.value += '*'})
    ACcal.addEventListener('click', ()=>{calcu.value = ' '})
+//    resultcal.addEventListener('click', ()=>{calcu.value = ' '})
  }
 
 function takeNum(){
