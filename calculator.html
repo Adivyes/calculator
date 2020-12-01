@@ -5,7 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    #continer{
+        display: grid;
+        grid-template-columns: 30px 30px 30px 30px;
+        grid-template-rows: 40px 40px 40px 40px;
+        gap: 10px;
+    }
+    #resultcal{
+    grid-row-start: 2;
+    grid-row-end: 6;
+    }
+</style>
 <body>
+    <input type="text" id="resulinput" placeholder="result display"><br>
+    <input type="text" id="calcu" placeholder="start calculate">
+
+    <div id = 'continer'>
+    <button id="sumcal">+</button>
+    <button id="mincal">-</button>
+    <button id="multical">*</button>
+    <button id="divical">/</button>
+    <button id="onecal">1</button>
+    <button id="twocal">2</button>
+    <button id="treecal">3</button>
+    <button id="resultcal">=</button>
+    <button id="fourcal">4</button>
+    <button id="fivecal">5</button>
+    <button id="sixcal">6</button>
+    <button id="sevencal">7</button>
+    <button id="eightcal">8</button>
+    <button id="ninecal">9</button>
+    <button id="zerocal">0</button>
+    <button id="decemelcal">.</button>
+    <button id="ACcal">AC</button>
+    </div>
     <script src ='calculator.js'></script>
 </body>
 </html>
