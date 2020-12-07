@@ -5,13 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<style>
-   body{
-       background-color: rgba(119, 119, 119, 0.671);
-   }
-</style>
+
 <body>
     <div id="main">hello world</div>
+    <form>
+        <div>
+            <label name="label">Name</label><br>
+            <input type="text" name="f_name" value=""><br>
+            <label name="label">Last Name</label><br>
+            <input type="text" name="f_name" value="">
+        </div>
+        <div>
+            <label>Email</label><br>
+            <input type="email" name="email">
+        </div><br>
+        <div>
+            <label>Telephone</label><br>
+            <input type="tel" name="Telephone">
+        </div>
+        <div>
+            <label>Age</label><br>
+            <input type="number" name="age">
+        </div>
+        <br>
+        <button value="Submit" onclick="showTable()">submit</button>
+        <button type="reset">Reset</button>
+    </form>
    <script src="homework.js"></script> 
 </body>
 </html>
