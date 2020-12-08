@@ -86,6 +86,8 @@
 // }
 // const stu1 = new Student(7,"dsgfdsgd","Yossi", 16, 160);
 // stu1.speak()
+
+
 // static bestEngine(array1){
 //     let max = 0;
 //     let maxIndex = 0;
@@ -124,9 +126,11 @@ return array1[maxIndex];
 }
 class Car extends Vehicles{
     company;
-    constructor(company,engine_capacity,wheels_Number,color){
+    name;
+    constructor(company,name,engine_capacity,wheels_Number,color){
         super(engine_capacity,wheels_Number,color);
         this.company = company;
+        this.name = name;
     }
     get lettersBig(){
         return this.bigLetters();
@@ -167,3 +171,22 @@ let prinItCar = new Car('toyota',1400,4,'blue');
 
 
 console.log(Vehicles.bestEngine([prinItMotor,prinItTruck,prinItCar]));
+let trIndex = 0;
+function newTable(){
+    // console.log(Wheels.value)
+    // console.log(Capacity.value)
+    // console.log(color.value)
+    // console.log(Name.value)
+    // console.log(selectedId.value)
+
+    let carObj = new Car (selectedId.value,Name.value,Capacity.value,Wheels.value,color.value) //לא לשכוח להתאים את הערכים בפונקציה לקלאסים שייצרנו שיהיה אחד לאחד שיעבוד לי הכל בסוף
+   
+   
+    let trId = `trId${trIndex++}`
+    tabelId.innerHTML += `<tr id = ${trId}></tr>`
+    for(const key in carObj) {
+document.getElementById(trId).innerHTML += `<td>${carObj[key]}</td>`
+}
+
+document.getElementById(trId).innerHTML += `<td>${selectedId.value}</td>`
+}

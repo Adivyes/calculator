@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    text-align: center;
+}
+#nameDiv{
+    margin-top: 50px;
+}
+
+.input{
+    font-size: 30px;
+}
+
+#submit{
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    font-size: 25px;
+    box-shadow: 0 5px 5px 0;
+}
+
+table{
+    border-collapse: collapse;
+    width: 50%;
+    margin: 50px auto;
+}
+table, th, td{
+    border: 2px solid black;
+    padding: 5px;
+}
+
+th{
+    font-size: 30px;
+}
+
+td{
+    font-size: 20;
+}

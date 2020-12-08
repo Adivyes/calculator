@@ -7,30 +7,39 @@
 </head>
 
 <body>
-    <div id="main">hello world</div>
-    <form>
-        <div>
-            <label name="label">Name</label><br>
-            <input type="text" name="f_name" value=""><br>
-            <label name="label">Last Name</label><br>
-            <input type="text" name="f_name" value="">
-        </div>
-        <div>
-            <label>Email</label><br>
-            <input type="email" name="email">
-        </div><br>
-        <div>
-            <label>Telephone</label><br>
-            <input type="tel" name="Telephone">
-        </div>
-        <div>
-            <label>Age</label><br>
-            <input type="number" name="age">
-        </div>
-        <br>
-        <button value="Submit" onclick="showTable()">submit</button>
-        <button type="reset">Reset</button>
-    </form>
+    
+    <div>
+            <label for="wheels_Number">Wheels Number</label><br>    
+            <input id="Wheels" type="number" name="wheels_Number"><br>
+
+            <label for="engine_capacity">Engine Capacity</label><br>
+            <input id="Capacity" type="number" name="engine_capacity"><br>
+
+            <label for="color">color</label><br>
+            <input id="color" type="color" name="color"><br>
+
+            <label for="label">Name</label><br>
+            <input id="Name" type="text" name="name"><br>
+       
+          <select name="carOptions" id="selectedId">
+             <option value="chose">Chose Vihecale</option>
+              <option value="privet">Privet</option>
+              <option value="Truck">Truck</option>
+              <option value="Motorcicel">Motorcicel</option>
+          </select><br> 
+        <button value="Submit" onclick="newTable()">submit</button>
+        
+    </div> 
+       <table id="tabelId">
+           <tr>
+              <td>Wheels Number</td> 
+              <td>Engine Capacity</td> 
+              <td>color</td> 
+              <td>Name</td> 
+              <td>Vihecale</td> 
+           </tr>
+       </table>
+    
    <script src="homework.js"></script> 
 </body>
 </html>
