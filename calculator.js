@@ -96,37 +96,3 @@ function resultFunction (){
 
 
 
-
-// // function messegeNum(num){
-//     switch (num){
-
-//         case 1:
-//             messagebtn.innerHTML = 
-//             break;
-//         case 2:
-//             messagebtn.innerHTML = 
-//             break;
-//         case 3:
-//             messagebtn.innerHTML = 
-//             break;
-//         case 4:
-//             messagebtn.innerHTML = 
-//             break;
-//         case 5:
-//             messagebtn.innerHTML = 
-//             break;
-//         case 6:
-//             messagebtn.innerHTML = 
-//             break;
-//         case 7:
-//             messagebtn.innerHTML = 
-//             break;
-//         case 8:
-//             messagebtn.innerHTML = 
-//             break;
-//             default:
-//                 messagebtn.innerHTML = `n/v`
-//     }
-// }
-
-

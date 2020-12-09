@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel='stylesheet' href="form_vehicale.css">
+    <link rel="stylesheet" href="form_vehicale.css">
 </head>
 
 <body>
-    <div id="container">
-        <div id="nameDiv" class="input">
-            <label name="label">Vehicale</label><br>
-            <input id="Vehicale" type="text" required><br>
-        </div><br>
-        <div class="input">
-            <label name="label">Engine Capacity</label><br>
-            <input id="Engine" type="text" required>
-        </div><br>
-        <div class="input">
-            <label>Color</label><br>
-            <input id="Color" type="text" required>
-        </div><br>
-        <div class="input">
-            <label>Wheels Number</label><br>
-            <input id="Wheels" type="number" required>
-        </div>
-        <button id="submit" onclick="displayDetails()">submit</button>
-    </div>
-    <table id="display">
-        <tr>
-            <th>Vehicale</th>
-            <th>Engine Capacity</th>
-            <th>Color</th>
-            <th>Wheels Number</th>
-        </tr>
-    </table>
+    
+    <div>
+            <label for="wheels_Number">Wheels Number</label><br>    
+            <input id="Wheels" type="number" name="wheels_Number"><br>
 
+            <label for="engine_capacity">Engine Capacity</label><br>
+            <input id="Capacity" type="number" name="engine_capacity"><br>
 
-    <script src="form_vehicale.js"></script>
+            <label for="color">color</label><br>
+            <input id="color" type="color" name="color"><br>
+
+            <label for="label">Name</label><br>
+            <input id="Name" type="text" name="name"><br>
+       
+          <select name="carOptions" id="selectedId">
+             <option value="chose">Chose Vihecale</option>
+              <option value="Car">Car</option>
+              <option value="Truck">Truck</option>
+              <option value="Motorcicel">Motorcicel</option>
+          </select><br> 
+        <button id='submit' value="Submit" onclick="newTable()">submit</button>
+        
+    </div> 
+       <table id="tabelId">
+           <tr>
+              <td>Name</td> 
+              <td>Capacity</td> 
+              <td>Wheels Number</td> 
+              <td>color</td> 
+              <td>Vihecale</td> 
+           </tr>
+       </table>
+    
+   <script src="form_vehicale.js"></script> 
 </body>
-
 </html>
