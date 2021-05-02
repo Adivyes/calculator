@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="./calc.css">
+</head>
+<body>
+<h1>Calculator</h1>
+
+<div class="calculator-panel">
+    <input type="text" id="inputNumbers" class="calculator-display-operation-panel" maxlength="10" placeholder="0" readonly>
+    <br>
+
+    <input type="button" class="buttons" name="btn1" id="btn1" value="7" onclick="showValue(btn1.value)">
+    <input type="button" class="buttons" name="btn2" id="btn2" value="8" onclick="showValue(btn2.value)">
+    <input type="button" class="buttons" name="btn3" id="btn3" value="9" onclick="showValue(btn3.value)">
+    <input type="button" class="buttons" name="btn4" id="btn4" value="-" onclick="showValue(btn4.value)">
+
+    <input type="button" class="buttons" name="btn5" id="btn5" value="4" onclick="showValue(btn5.value)">
+    <input type="button" class="buttons" name="btn6" id="btn6" value="5" onclick="showValue(btn6.value)">
+    <input type="button" class="buttons" name="btn7" id="btn7" value="6" onclick="showValue(btn7.value)">
+    <input type="button" class="buttons" name="btn8" id="btn8" value="+" onclick="showValue(btn8.value)">
+
+    <input type="button" class="buttons" name="btn9" id="btn9" value="1" onclick="showValue(btn9.value)">
+    <input type="button" class="buttons" name="btn10" id="btn10" value="2" onclick="showValue(btn10.value)">
+    <input type="button" class="buttons" name="btn11" id="btn11" value="3" onclick="showValue(btn11.value)">
+    <input type="button" class="buttons" name="btn12" id="btn12" value="*" onclick="showValue('*')">
+
+    <input type="button" class="buttons" name="btn13" id="btn13" value="0" onclick="showValue(btn13.value)">
+    <input type="button" class="buttons" name="btn14" id="btn14" value="ce" onclick="clearValues()">
+    <input type="button" class="buttons" name="btn15" id="btn15" value="del" onclick="deleteOnValue()">
+    <input type="button" class="buttons" name="btn16" id="btn16" value="/" onclick="showValue(btn16.value)">
+
+    <input type="button" class="buttons" name="btn17" id="btn17" value="." onclick="showValue(btn17.value)">
+    <input type="button" class="button-total" name="btn18" id="btn18" value="=" onclick="equal()">
+</div>
+
+<script rel="script" type="text/javascript" src='./calc.js'></script>
+</body>
+</html>
